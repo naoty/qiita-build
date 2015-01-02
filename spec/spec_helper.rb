@@ -1,2 +1,4 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'qiita/build'
+lib = File.expand_path("../lib", __dir__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+require "qiita-build"
+require "pathname"

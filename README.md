@@ -23,7 +23,7 @@ Given a below template,
 `qiita-build` will build an item from the template and stdin, like this.
 
 ```
-$ echo '{"fullname": "Naoto Kanekoo", "nickname": "naoty", "location": "Tokyo", "birthday": "1987/6/2"}' | qiita-build -a <ACCESS TOKEN> <TEMPLATE ID>
+$ echo '{"fullname": "Naoto Kanekoo", "nickname": "naoty", "location": "Tokyo", "birthday": "1987/6/2"}' | qiita-build -a <ACCESS TOKEN> -t <TEAM> <TEMPLATE ID>
 # 自己紹介
 * 氏名: Naoto Kaneko
 * ニックネーム: naoty
