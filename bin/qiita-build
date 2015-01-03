@@ -7,4 +7,4 @@ require "qiita-build"
 
 stdin = STDIN.gets
 command = Qiita::Build::Command.new(stdin, ARGV)
-command.run
+puts command.run

@@ -15,7 +15,7 @@ module Qiita
         client = Qiita::Client.new(team: team, access_token: access_token)
         response = client.get_template(template_id)
         template = response.body["body"]
-        puts Builder.new.build(template: template, json: @json)
+        Builder.new.build(template: template, json: @json)
       end
 
       private
